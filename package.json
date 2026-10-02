@@ -1,0 +1,19 @@
+{
+  "name": "plana-bizreport-ppt",
+  "version": "1.1.0",
+  "private": true,
+  "description": "한국평가데이터 기업종합보고서(엑셀·PDF)를 읽어 7대 영역 경영진단 컨설팅 PPT를 만드는 브라우저 도구",
+  "scripts": {
+    "fixtures": "node scripts/make-fixtures.js",
+    "build": "node scripts/build-standalone.js",
+    "test": "node --test tests/consistency.test.js",
+    "serve": "npx --yes http-server -c-1 -p 8080 ."
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": {
+    "jszip": "3.10.1",
+    "pdfjs-dist": "3.11.174",
+    "pptxgenjs": "3.12.0",
+    "xlsx": "0.18.5"
+  }
+}
